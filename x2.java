@@ -2,8 +2,8 @@
 //////// Whoever Whoever  (CST 112; today's date?)
 
 //////// Please change these to your name and today's date.
-String author=  "Whoever Whatever";
-String title=  " ??? ";
+String author=  "Evelyn 09/24/15";
+String title=  "Bad Dog";
 String help=  " Click to relocate hero \n 'q' to quit; 'r' to reset. ";
 
 
@@ -25,8 +25,20 @@ void setup() {
 
 //// NEXT FRAME:  scene, action, show.
 void draw() {
-  scene();
-  hero();
+  scene(
+      background( 0,191,255 );                // sky
+  fill( 255,255,0 );
+    );
+  hero(
+    fill(245,222,179); //color of face
+    ellipse(x, y, 80, 80);//face
+    fill(176,224,230);//color of eyes
+    ellipse(x,y,10,10);//eye
+    ellipse(x+40,y,10,10);//eye
+   fill(220,20,60);//color of mouth
+    rect(x+10,y+10,30,10); //mouth    
+    fill(75,0,130);  //color of name);
+    );
   dog();
   messages();
 }
